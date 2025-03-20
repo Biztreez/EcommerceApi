@@ -7,11 +7,11 @@ const twilioPhoneNumber = process.env.TWILIO_PHONE_NUMBER;
 const client = new twilio(accountSid, authToken);
 const sendOtp = async (phoneNumber, otp) => {
   try {
-    // const message = await client.messages.create({
-    //   body: `Your OTP code is: ${otp}`,
-    //   from: twilioPhoneNumber,
-    //   to: phoneNumber,
-    // });
+    const message = await client.messages.create({
+      body: `Your OTP code is: ${otp}`,
+      from: twilioPhoneNumber,
+      to: phoneNumber,
+    });
 
     console.log(`✅ OTP Sent to ${phoneNumber}: ${otp}`);
 
