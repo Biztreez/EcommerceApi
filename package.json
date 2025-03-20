@@ -22,10 +22,10 @@
     "nodemon": "^3.1.9",
     "onesignal-node": "^3.4.0",
     "path": "^0.12.7",
-    "stripe": "^15.6.0"
+    "stripe": "^15.6.0",
+    "twilio": "^5.5.0"
   },
   "description": "This is Ecommerce App",
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Biztreez/ecomerceAppAPI.git"
